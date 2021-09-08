@@ -16,5 +16,4 @@ console.log(object.sünnipäev + '.' + object.sünnikuu + '.' + object.sünniaas
 
 console.log(`${object.sünnipäev}.${object.sünnikuu}.${object.sünniaasta}`);
 
-//console.log(`Hobi 1: ${object.hobid[1]}`);
 
