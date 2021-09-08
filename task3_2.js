@@ -2,7 +2,9 @@
 function greet(name) {
 
     let result = 'Hello, ';
+    
     let row = '';
+
 
     if  (Array.isArray(name)) {
 
