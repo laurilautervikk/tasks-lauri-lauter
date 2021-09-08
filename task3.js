@@ -1,23 +1,17 @@
 
 function greet(name) {
 
-    if  (Array.isArray(name) == true) {
-        //console.log('<asukoht array>')
+    if  (Array.isArray(name)) {
         return 'Hello, ' + name[0] + ' and ' +name[1] + '.';
         
-    } else if (name != null) {
-        //console.log('<asukoht name>')
+    } else if (name) {
         return 'Hello, ' + name + '.';
 
     } else {
-        //console.log('<asukoht friend>')
         return 'Hello, my friend.';
     }
 
 };
-
-
-
 
 
 
