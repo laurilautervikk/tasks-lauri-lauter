@@ -7,6 +7,7 @@ let sünnikuu = bday.getMonth()
 let sünniaasta = bday.geFullYear()
 
 
+
 let hobid = ['ballett','voolimine']
 
 let object = {
