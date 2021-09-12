@@ -3,7 +3,7 @@ function greet(name) {
 
     let result = 'Hello, ';
     
-    let row = ''; //finish this puzzle
+    let row = ''; //finish this puzzle test
 
 
     if  (Array.isArray(name)) {
