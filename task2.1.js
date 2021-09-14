@@ -1,24 +1,20 @@
-let eesnimi ='Lauri'
 
-let bday = new Date(1980, 10, 06)
+const firstName ='Lauri'
 
-let sünnipäev = bday.getDay()
-let sünnikuu = bday.getMonth()
-let sünniaasta = bday.geFullYear()
+const bday = new Date('1980', '10', '06')
 
+const hobies = ['sports','coding']
+const object = {
+    firstName: firstName,
+    birthDay: bday.getDate(), // getDay returns the day of the week
+    birthMonth: bday.getMonth(),
+    birthYear: bday.getFullYear(),
+    hobies: hobies
+}
 
+const birthday = object.birthDay + '.' + object.birthMonth + '.' + object.birthYear
 
-let hobid = ['ballett','voolimine']
+//console.log(object)
 
-let object = {
-    eesnimi:eesnimi,
-    sünnipäev:sünnipäev,
-    sünnikuu:sünnikuu,
-    sünniaasta:sünniaasta,
-    hobid:hobid}
+console.log(birthday)
 
-console.log(object)
-
-console.log(object.sünnipäev + '.' + object.sünnikuu + '.' + object.sünniaasta)
-
-console.log(`${object.sünnipäev}.${object.sünnikuu}.${object.sünniaasta}`)
