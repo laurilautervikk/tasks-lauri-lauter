@@ -1,26 +1,25 @@
 
-const numbers = []
 
-// generate 5 random numbers between 1 and 100
-function randomize() {
-    for (let i = 0; i < 5; i++) {
+// generate n amount of random numbers between 1 and 100
+function randomize(n) {
+    let numbers = []
+    for (let i = 0; i < n; i++) {
         numbers.push(Math.floor((Math.random() * 100) + 1))
     }
+    return numbers
 }
 
-//find max
+//find max number in array
 function max(arr) {
-    console.log('Max number: ' + Math.max(...arr))
+    return Math.max(...arr)
 }
 
-//find min
+//find min number in array
 function min(arr) {
-    console.log('Min number: ' + Math.min(...arr))
+    return Math.min(...arr)
 }
 
-//check if even, via reminder
-//generate a new array with the boolean results
-//log the lenght of the new array
+//find the amount of even numbers in the array
 function even(arr) {
     const bool = []
     for (let i = 0; i < arr.length; i++) {
@@ -28,14 +27,19 @@ function even(arr) {
             bool.push(true)
         }
     }
-    console.log('Count even: ' + bool.length)
+    return bool.length
 }
 
 
+const numbers = randomize(5)
+console.log(numbers)
 
-randomize()
-max(numbers)
-min(numbers)
-even(numbers)
+const maxNumber = max(numbers)  
+console.log(maxNumber)
 
-console.log('Numbers are: ' + numbers)
+const minNumber = min(numbers)  
+console.log(minNumber)
+
+const evenNumber = even(numbers)  
+console.log(evenNumber)
+
