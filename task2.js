@@ -1,19 +1,19 @@
-let eesnimi ='Lauri';
-let sünnipäev ='6';
-let sünnikuu ='Oktoober';
-let sünniaasta ='1980';
-let hobid = ['ballett','voolimine'];
-let object = {
-    eesnimi:eesnimi,
-    sünnipäev:sünnipäev,
-    sünnikuu:sünnikuu,
-    sünniaasta:sünniaasta,
-    hobid:hobid};
+const firstName ='Lauri'
+const birthDay ='6'
+const birthMonth ='10'
+const birthYear ='1980'
+const hobies = ['sports','coding']
+const object = {
+    firstName:firstName,
+    birthDay:birthDay,
+    birthMonth:birthMonth,
+    birthYear:birthYear,
+    hobies:hobies}
 
-console.log(object);
+console.log(object)
 
-console.log(object.sünnipäev + '.' + object.sünnikuu + '.' + object.sünniaasta);
+//console.log(object.birthDay + '.' + object.birthMonth + '.' + object.birthYear)
 
-console.log(`${object.sünnipäev}.${object.sünnikuu}.${object.sünniaasta}`);
+console.log(`${object.birthDay}.${object.birthMonth}.${object.birthYear}`)
 
 
