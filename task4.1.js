@@ -1,14 +1,9 @@
 
 const colors = ['Red', 'Green', 'White', 'Black']
-const list = []
 
-for (let i = 0; i < colors.length; i++) {
-    list.push(colors[i])
-}
-
-const first = list.toString()
-const second = list.join(', ')
-const third = list.join(' + ')
+const first = colors.toString()
+const second = colors.join(', ')
+const third = colors.join(' + ')
 
 console.log(first)
 console.log(second)
