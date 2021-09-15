@@ -1,26 +1,36 @@
 
-function greet(name) {
-    let result = 'Hello, ';
-    let row = [];
+function greet(list) {
+    let hello = 'Hello, '
+    let names = []
 
-    if  (Array.isArray(name)) {
-        for (let i = 0; i < name.length; i++) {
-            row.push(name[i])
+    if  (Array.isArray(list)) {
+
+        for (let i = 0; i < list.length; i++) {
+            names.push(list[i])
+            
         }
-        row.splice(row.length - 1, 0, "and") //insert 'and' in pos length-1
-        row = row.join(' ') // join the array as a string separated by a gap
+        //console.log('first: ' + list)
+        for (let i = 0; i < list.length - 2; i++) {
+            names[i] += ','
+            
+        }
+        //console.log('second: ' + list)
 
-    } else if (name) {
-        result +=  name;
+        names.splice(names.length - 1, 0, "and") //insert 'and' in pos length-1
+        names = names.join(' ') // join the array as a string separated by a gap
+
+    } else if (list) {
+        hello +=  list
     } else {
-        result +=  'my friend';
+        hello +=  'my friend'
     }
-    return result += row + '.';
+    return hello += names + '.'
 
 };
 
 
-console.log(greet('Bob'));
-console.log(greet());
-console.log(greet(['Jill', 'Jane']));
-console.log(greet(['Jill', 'Jane', 'Judy']));
+console.log(greet('Bob'))
+console.log(greet())
+console.log(greet(['Jill', 'Jane']))
+console.log(greet(['Jill', 'Jane', 'Judy']))
+console.log(greet(['Jill', 'Jane', 'Judy', 'Jim', 'Cody']))
