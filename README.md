@@ -40,7 +40,7 @@ For running these files you will need Node.js.
 
 - #### Node installation
 
-Just to the  [Node.js website](https://nodejs.org/) and download the installer. Follow the instructions.
+Just go to the  [Node.js website](https://nodejs.org/) and download the installer. Follow the instructions.
 
 - #### Running the files
 
