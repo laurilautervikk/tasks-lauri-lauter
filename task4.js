@@ -1,9 +1,18 @@
 
 let colors = ['Red', 'Green', 'White', 'Black']
 
-const first = colors.toString() + '.'
-const second = colors.toString() + ','
+
+let first = ''
+let second = ''
 let third = ''
+
+for (let i = 0; i < colors.length; i++) {
+    first += colors[i]+'.'
+}
+
+for (let i = 0; i < colors.length; i++) {
+    second += colors[i]+','
+}
 
 for (let i = 0; i < colors.length; i++) {
     third += colors[i]+'+'
