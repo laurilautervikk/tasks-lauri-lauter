@@ -1,0 +1,14 @@
+numbers needed
+
+"Year":"1994"
+"Released":"14 Oct 1994"
+"Runtime":"2 h 22 min"
+"imdbRating":"9.3"
+"imdbVotes":"1,078,045"
+
+arrays needed
+
+"Genre":"Crime, Drama"
+"Director":"Frank Darabont"
+"Writer":"Stephen King, Frank Darabont"
+"Actors":"Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler"

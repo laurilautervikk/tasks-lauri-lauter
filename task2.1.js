@@ -15,6 +15,6 @@ const object = {
 const birthday = object.birthDay + '.' + object.birthMonth + '.' + object.birthYear
 
 //console.log(object)
-
+console.log(object)
 console.log(birthday)
 

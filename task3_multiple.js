@@ -7,15 +7,12 @@ function greet(list) {
 
         for (let i = 0; i < list.length; i++) {
             names.push(list[i])
-            
         }
-        //console.log('first: ' + list)
-        for (let i = 0; i < list.length - 2; i++) {
-            names[i] += ','
-            
-        }
-        //console.log('second: ' + list)
 
+        for (let i = 0; i < list.length - 2; i++) {
+            names[i] += ','  
+        }
+        
         names.splice(names.length - 1, 0, "and") //insert 'and' in pos length-1
         names = names.join(' ') // join the array as a string separated by a gap
 
@@ -27,6 +24,7 @@ function greet(list) {
     return hello += names + '.'
 
 };
+
 
 
 console.log(greet('Bob'))
