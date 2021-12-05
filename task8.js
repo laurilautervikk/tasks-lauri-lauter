@@ -297,9 +297,10 @@ console.log(`First Leonardo DiCaprio movie in this list was released on ${minYea
 
 
 
+
 console.log('\n' + 'Rating:')
 
-//make an array of ratings
+//make an array of ratings.
 let rating = []
 function getRating(input) {
     for (i in input) {
