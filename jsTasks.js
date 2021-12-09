@@ -64,12 +64,10 @@ console.log(people)
 // EX.5
 console.log('EX.5')
 
-const peopleUpperKeys = persons.map(item =>
-  Object.keys(item).reduce((newObject, key) => {
-    newObject[key.toUpperCase()] = item[key];
-    return newObject;
-  }, {})
-);
+const peopleUpperKeys = persons.map(item => Object.fromEntries(Object.entries(item).map(([key, val]) => [
+  key.toUpperCase(),
+  val
+])));
 
 console.log(peopleUpperKeys)
 
